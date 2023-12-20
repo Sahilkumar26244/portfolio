@@ -49,24 +49,34 @@ function Footer() {
             </Text>
             <Flex gap={"20px"} alignItems={"center"}>
               <div class="hvr-float">
-                <Box _hover={{color:"#7843e9"}}>
-                    <FaLinkedinIn style={{ fontSize: "25px", cursor: "pointer" }} />
+                <a href="https://www.linkedin.com/in/sahil-kumar-923694233/">
+                  <Box _hover={{ color: "#7843e9" }}>
+                    <FaLinkedinIn
+                      style={{ fontSize: "25px", cursor: "pointer" }}
+                    />
+                  </Box>
+                </a>
+              </div>
+              <div class="hvr-float">
+                <a href="https://github.com/Sahilkumar26244">
+                  <Box _hover={{ color: "#7843e9" }}>
+                    <FaGithub style={{ fontSize: "25px", cursor: "pointer" }} />
+                  </Box>
+                </a>
+              </div>
+              <div class="hvr-float">
+                <Box _hover={{ color: "#7843e9" }}>
+                  <FaTwitter style={{ fontSize: "25px", cursor: "pointer" }} />
                 </Box>
               </div>
               <div class="hvr-float">
-                <Box _hover={{color:"#7843e9"}}>
-                <FaGithub style={{ fontSize: "25px", cursor: "pointer" }} />
-                </Box>
-              </div>
-              <div class="hvr-float">
-                <Box _hover={{color:"#7843e9"}}>
-                <FaTwitter style={{ fontSize: "25px", cursor: "pointer" }} />
-                </Box>
-              </div>
-              <div class="hvr-float">
-                <Box _hover={{color:"#7843e9"}}>
-                <FaFacebook style={{ fontSize: "25px", cursor: "pointer" }} />
-                </Box>
+                <a href="https://www.facebook.com/profile.php?id=100007725040885">
+                  <Box _hover={{ color: "#7843e9" }}>
+                    <FaFacebook
+                      style={{ fontSize: "25px", cursor: "pointer" }}
+                    />
+                  </Box>
+                </a>
               </div>
             </Flex>
           </Box>

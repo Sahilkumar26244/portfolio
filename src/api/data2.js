@@ -39,21 +39,6 @@ const data = [
   },
   {
     id: 3,
-    img: p4,
-    title: "Vanaras",
-    description:
-      "Vanaras is a 100% organic, minimalist design label, founded on the simple precept that our love for beautiful clothing need not negatively impact our beautiful planet.",
-    projectOverview: [
-      "Vanaras is a 100% organic, minimalist design label, founded on the simple precept that our love for beautiful clothing need not negatively impact our beautiful planet.",
-      "I have worked on the backend of this project, implementing full e-commerce functionality, particularly focusing on the 'Add to Cart' feature where I categorized prices based on sizes.",
-      "I have used Node.js and Express for the backend, and MongoDB for storage. I have also handled the deployment of the backend, which is hosted on Render.",
-      "This project includes many other features such as 'Add to Cart'. You can also view the products in full-screen mode with the ability to zoom in and out. You can see details about the clothes such as materials, wash and care instructions, as well as the available size chart. Additionally, it has a search functionality that I implemented in the backend.",
-    ],
-    tools:["Wordpress","PHP","Javascript","Express","NodeJs","MongoDB","GIT","Github","Render"],
-    link:"https://vanaras.com/"
-  },
-  {
-    id: 4,
     img: p3,
     title: "Gaztron",
     description:
@@ -68,7 +53,7 @@ const data = [
     link:"https://gaztron.co.in/"
   },
   {
-    id: 5,
+    id: 4,
     img: p2,
     title: "Bharat & Sons Systems Solutions",
     description:
@@ -82,7 +67,7 @@ const data = [
     link:"https://bharatsonssystemssolutions.com/"
   },
   {
-    id: 6,
+    id: 5,
     img: p1,
     title: "Homminterior",
     description:

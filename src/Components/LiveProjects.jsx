@@ -43,7 +43,7 @@ function LiveProjects({Project}) {
           <Flex key={index} w={{base:"90%",lg:"90%",xl:"70%"}} m={"auto"} gap={{base:"0px",sm:"0px",md:"30px",lg:"40px",xl:"40px"}} direction={{base:"column",lg:"row"}}>
             <Box w={{base:"100%",lg:"50%",xl:"40%"}}>
               <Box>
-                <Image w={"100%"} h={"100%"} src={project.img} />
+                <Image w={"100%"} h={"100%"} src={project?.img} />
               </Box>
             </Box>
             <Box
@@ -54,7 +54,7 @@ function LiveProjects({Project}) {
               gap={{base:"15px",sm:"16px",md:"17px",lg:"17px",xl:"17px"}}
             >
               <Text textTransform={"uppercase"} fontWeight={700} fontSize={{base:"22px",lg:"28px"}} textAlign={{base:"center",lg:"left"}}>
-                {project.title}
+                {project?.title}
               </Text>
               <Text
                 fontWeight={400}
@@ -63,7 +63,7 @@ function LiveProjects({Project}) {
                 color={"#666666"}
                 textAlign={{base:"center",lg:"left"}}
               >
-                {project.description}
+                {project?.description}
               </Text>
               <Box mt={{sm:"20px",lg:"0px"}} display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
                 <div class="hvr-float">

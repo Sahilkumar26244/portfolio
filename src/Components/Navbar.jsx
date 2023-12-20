@@ -92,8 +92,10 @@ const DesktopNav = ({scrollToSection,Home,About,Skills,Project,Contact}) => {
           <Box _hover={{color:"#7843e8",cursor:"pointer",transition:"0.5s"}}>
             <div class='hvr-wobble-horizontal'>
             <Text onClick={() => scrollToSection(Home)} cursor={"pointer"} >
+                  <Link to='/'>
                   Home
-              </Text>
+                  </Link>
+            </Text>
             </div>
               
           </Box>

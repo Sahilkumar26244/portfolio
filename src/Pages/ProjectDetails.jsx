@@ -26,7 +26,7 @@ function Project1() {
             fontSize={{ base: "40px", lg: "60px" }}
             textTransform={"uppercase"}
           >
-            {project.title}
+            {project?.title}
           </Text>
         </Box>
         <Box
@@ -40,7 +40,7 @@ function Project1() {
             fontSize={{ base: "15px", lg: "20px" }}
             lineHeight={"29px"}
           >
-            {project.description}
+            {project?.description}
           </Text>
         </Box>
         <Box
@@ -51,7 +51,7 @@ function Project1() {
           mt={{ base: "35px", lg: "40px" }}
         >
           <div class="hvr-float">
-            <a href={project.link}>
+            <a href={project?.link}>
             <Button
               lineHeight={{base:"27px",lg:"30px"}}
               fontSize={{base:"18px",lg:"20px"}}
@@ -80,7 +80,7 @@ function Project1() {
         gap={"30px"}
       >
         <Box>
-          <Image w={"100%"} h={"100%"} src={project.img} />
+          <Image w={"100%"} h={"100%"} src={project?.img} />
         </Box>
         <Box w={{base:"100%",lg:"85%"}} m={"auto"}>
           <Box display={"flex"} flexDirection={"column"} gap={"25px"}>
@@ -88,7 +88,7 @@ function Project1() {
               Project Overview
             </Text>
             <Box display={"flex"} flexDirection={"column"} gap={"15px"}>
-              {project.projectOverview.map((e, i) => (
+              {project?.projectOverview?.map((e, i) => (
                 <>
                   <Box key={i}>
                     <Text
@@ -119,7 +119,7 @@ function Project1() {
             </Text>
           </Box>
           <Flex gap={"15px"} flexWrap={{base:"wrap",lg:"none"}}>
-            {project.tools.map((e, i) => (
+            {project?.tools?.map((e, i) => (
               <>
                 <Box key={i}>
                   <Box

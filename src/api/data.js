@@ -50,18 +50,19 @@ const data = [
     link:"https://elegant-phoenix-6d9276.netlify.app/"
   },
   {
-    id: 3,
+    id: 4,
     img: p10,
     title: "Note Zipper",
     description:
-      "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
+      "This Note Zipper is essentially similar to a to-do application where you can implement create, read, update, and delete functionalities.",
     projectOverview: [
-      "Dopefolio is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
-      "Since the launch of this project, It has received more than 2k stars on Github and it has also got featured on hundreds of sites and CSS-tricks.com has also featured this template as the hottest frontend tool of 2021 in one of their articles which you can find here",
-      "Dopefolio is now being used by thousands of developers globally and it has helped many people in landing jobs & opportunities which makes me happy that my creation is helping other people in building their careers.",
-      "It has many other features like Dopefolio's repo contains a playground link which people can use to test the template with different theme colours to find their own preferred primary colour for the template.",
+      "This Note Zipper is essentially similar to a to-do application where you can implement create, read, update, and delete functionalities.",
+      "This is my very first note zipper application that I created using the MERN stack.",
+      "In this, you can also see the functionality of app authentication where you can sign up and log in via email, and your data will be displayed in your profile. You can also update your profile such as name, profile picture, email, and password.",
+      "I also implement Redux on this to manage the state."
     ],
-    tools:["HTML","CSS","Javascript","SASS","GIT","Github"]
+    tools:["HTML5","CSS3","Javascript","MUI","Redux","Express","NodeJS","MongoDB","GIT","Github"],
+    link:"https://charming-hotteok-73012b.netlify.app/"
   },
 ];
 
