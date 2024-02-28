@@ -37,7 +37,7 @@ function MoveToTop() {
           onClick={scrollToTop}
           position='fixed'
           bottom='100px'
-          right={['56px', '40px']}
+          right={['40px', '40px']}
           zIndex={3}>
           
           <Circle cursor={"pointer"} bg={"black"} color={"white"} p={"10px"} border={"1px solid black"}>

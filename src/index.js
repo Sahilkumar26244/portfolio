@@ -6,12 +6,11 @@ import { ChakraProvider ,extendTheme  } from '@chakra-ui/react'
 import {BrowserRouter} from "react-router-dom"
 
 const breakpoints = {
-  base: "0px",//mobile
-  sm: "381px",//mobile tak                     //yha se start hoga sm
-  md: "740px",//tablet se leke or mobile tak
-  lg: "1024px",//tablet tak
-  xl: "1600px",
-  "2xl": "2536px",
+  base: "0px",
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px"
 };
 
 // 3. Extend the theme

@@ -45,9 +45,9 @@ export default function WithSubnavigation({scrollToSection,Home,About,Skills,Pro
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'} position={"fixed"} w={"100%"} zIndex={1000} >
+        align={'center'} position={"fixed"} w={"100%"} zIndex={1000} border={"1px solid"}>
         
-        <Flex justify={{ base: 'center', md: '' }} w={"100%"} >
+        <Flex justify={{ base: 'center', md: '' }} w={"1500px"} m={"auto"} border={"1px solid red"}>
             <Flex justifyContent={"space-between"} w={"100%"} pl={"20px"}>
                 <Link to='/'>
                 <Box display={"flex"} alignItems={"center"} gap={"20px"}>

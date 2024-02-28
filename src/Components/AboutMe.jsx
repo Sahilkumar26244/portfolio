@@ -4,7 +4,8 @@ import React from "react";
 function AboutMe({About}) {
   return (
     <div ref={About} >
-    <Box  w={"100%"} pt={{base:"40px",lg:"90px"}} background={"#fafafa"} pb={"90px"}>
+    <Box background={"#fafafa"}>
+    <Box border={"1px solid"} w={{base:"100%",xl:"1500px"}} m={"auto"} pt={{base:"40px",lg:"90px"}}  pb={"90px"}>
       <Box pb={"10px"}>
         <Text
           textAlign={"center"}
@@ -34,7 +35,7 @@ function AboutMe({About}) {
           current skills mostly in terms of programming and technology
         </Text>
       </Box>
-      <Box p={{ base: "40px 30px 10px 30px", lg: "90px 150px 20px 150px" }}>
+      <Box p={{ base: "", lg: "" }} border={"1px solid red"} w={{base:"90%",xl:"1400px"}} m={"auto"} mt={"30px"}>
         <Flex gap={{base:"40px",lg:"80px"}} direction={{ base: "column", lg: "row" }}>
           <Box
             w={{ base: "100%", lg: "50%" }}
@@ -152,6 +153,7 @@ function AboutMe({About}) {
           </Box>
         </Flex>
       </Box>
+    </Box>
     </Box>
     </div>
   );

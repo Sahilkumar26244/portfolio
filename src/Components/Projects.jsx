@@ -38,52 +38,55 @@ function Projects({Project}) {
       </Text>
     </Box>
 
-    <Box p={{base:"15px 0px 15px 0px",lg:"20px 80px 20px 80px"}} display={"flex"} flexDirection={"column"} gap={{base:"60px",lg:"30px"}}>
+    <Box p={{base:"15px 0px 15px 0px",lg:""}} display={"flex"} flexDirection={"column"} gap={{base:"60px",lg:"30px"}}>
       {data?.map((project,index) => (
         <>
-          <Flex key={index} w={{base:"90%",lg:"90%",xl:"70%"}} m={"auto"} gap={{base:"0px",sm:"0px",md:"30px",lg:"40px",xl:"40px"}} direction={{base:"column",lg:"row"}}>
-            <Box w={{base:"100%",lg:"50%",xl:"40%"}}>
+          <Flex key={index} w={{base:"90%",lg:"1000px"}} m={"auto"} gap={{base:"0px",sm:"0px",md:"30px",lg:"40px"}} direction={{base:"column",lg:"row"}}>
+            <Box w={{base:"100%",lg:"50%"}}>
               <Box>
                 <Image w={"100%"} h={"100%"} src={project?.img} />
               </Box>
             </Box>
             <Box
-            p={{base:"",lg:"140px 20px 40px 20px",xl:"240px 10px 40px 20px"}}
+              p={{base:"0px 20px 40px 20px",lg:""}}
               w={{base:"100%",lg:"45%"}}
               display={"flex"}
               flexDirection={"column"}
-              gap={"15px"}
+              gap={{base:"15px",sm:"16px",md:"17px",lg:"17px"}}
+              justifyContent={"center"}
             >
-              <Text fontWeight={700} fontSize={{base:"22px",lg:"28px"}} textAlign={{base:"center",lg:"left"}}>
-                {project?.title}
-              </Text>
-              <Text
-                fontWeight={400}
-                fontSize={{base:"15px",lg:"18px"}}
-                lineHeight={{base:"26px",lg:"31px"}}
-                color={"#666666"}
-                textAlign={{base:"center",lg:"left"}}
-              >
-                {project?.description}
-              </Text>
-              <Box mt={{sm:"20px",lg:"0px"}} display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
-                <div class="hvr-float">
-                  <Link to={`/project/${project.id}`}>
-                  <Button
-                    _hover={{ bg: "#7843e9", color: "white" }}
-                    letterSpacing={"1px"}
-                    p={"25px 45px 25px 45px"}
-                    textTransform={"uppercase"}
-                    bg={"#7843e9"}
-                    color={"white"}
-                    fontWeight={700}
-                    fontSize={"14px"}
-                    boxShadow={"rgba(0, 0, 0, 0.1) 0px 10px 50px;"}
-                  >
-                    Case Study
-                  </Button>
-                  </Link>
-                </div>
+              <Box>
+                <Text textTransform={"uppercase"} fontWeight={700} fontSize={{base:"22px",lg:"28px"}} textAlign={{base:"center",lg:"left"}}>
+                  {project?.title}
+                </Text>
+                <Text
+                  fontWeight={400}
+                  fontSize={{base:"15px",lg:"18px"}}
+                  lineHeight={{base:"26px",lg:"31px"}}
+                  color={"#666666"}
+                  textAlign={{base:"center",lg:"left"}}
+                >
+                  {project?.description}
+                </Text>
+                <Box mt={{sm:"20px",lg:"0px"}} display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
+                  <div class="hvr-float">
+                    <Link to={`/liveproject/${project.id}`}>
+                    <Button
+                      _hover={{ bg: "#7843e9", color: "white" }}
+                      letterSpacing={"1px"}
+                      p={"25px 45px 25px 45px"}
+                      textTransform={"uppercase"}
+                      bg={"#7843e9"}
+                      color={"white"}
+                      fontWeight={700}
+                      fontSize={"14px"}
+                      boxShadow={"rgba(0, 0, 0, 0.1) 0px 10px 50px;"}
+                    >
+                      Case Study
+                    </Button>
+                    </Link>
+                  </div>
+                </Box>
               </Box>
             </Box>
           </Flex>
