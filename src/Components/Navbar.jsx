@@ -45,9 +45,9 @@ export default function WithSubnavigation({scrollToSection,Home,About,Skills,Pro
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'} position={"fixed"} w={"100%"} zIndex={1000} border={"1px solid"}>
+        align={'center'} position={"fixed"} w={"100%"} zIndex={1000}>
         
-        <Flex justify={{ base: 'center', md: '' }} w={"1500px"} m={"auto"} border={"1px solid red"}>
+        <Flex justify={{ base: 'center', md: '' }} w={"1500px"} m={"auto"}>
             <Flex justifyContent={"space-between"} w={"100%"} pl={"20px"}>
                 <Link to='/'>
                 <Box display={"flex"} alignItems={"center"} gap={"20px"}>
@@ -173,7 +173,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 
 const MobileNav = ({scrollToSection,Home,About,Project,Contact}) => {
   return (
-    <Stack border={"1px solid red"} position={"fixed"} w={"100%"} zIndex={2} h={{base:"270px",sm:"290px",md:"320px",lg:"",xl:""}} bg={useColorModeValue('white', 'gray.800')} p={5} display={{ lg: 'none' }} mt={{base:"65px",sm:"60px",md:"80px",lg:""}}>
+    <Stack position={"fixed"} w={"100%"} zIndex={2} h={{base:"270px",sm:"290px",md:"320px",lg:"",xl:""}} bg={useColorModeValue('white', 'gray.800')} p={5} display={{ lg: 'none' }} mt={{base:"65px",sm:"60px",md:"80px",lg:""}}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} scrollToSection={scrollToSection} Home={Home} About={About} Project={Project} Contact={Contact}  />
       ))}

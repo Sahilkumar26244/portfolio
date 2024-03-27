@@ -55,7 +55,7 @@ function Projects({Project}) {
               gap={{base:"15px",sm:"16px",md:"17px",lg:"17px"}}
               justifyContent={"center"}
             >
-              <Box>
+              <Box display={"flex"} flexDirection={"column"} gap={"15px"}>
                 <Text textTransform={"uppercase"} fontWeight={700} fontSize={{base:"22px",lg:"28px"}} textAlign={{base:"center",lg:"left"}}>
                   {project?.title}
                 </Text>
@@ -70,7 +70,7 @@ function Projects({Project}) {
                 </Text>
                 <Box mt={{sm:"20px",lg:"0px"}} display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
                   <div class="hvr-float">
-                    <Link to={`/liveproject/${project.id}`}>
+                    <Link to={`/project/${project.id}`}>
                     <Button
                       _hover={{ bg: "#7843e9", color: "white" }}
                       letterSpacing={"1px"}

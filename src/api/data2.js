@@ -19,7 +19,7 @@ const data = [
       "This is a freelancing project that I developed for a client, fulfilling all their requirements as per their specifications.",
       "I created its admin panel according to the client's requirements, utilizing the MERN stack.",
     ],
-    tools:["Javascript","Wordpress","Express","NodeJs","MongoDB","GIT","Github"],
+    tools:["Wordpress","GIT","Github"],
     link:"https://penthouse21.in/"
   },
   {
@@ -34,7 +34,7 @@ const data = [
       "If I talk about myself, I covered its backend part where I used an Express server, Node.js for the backend, and MongoDB for database storage. I completed it within 2 months, incorporating all the client's requirements and implementing various changes throughout the process.",
       "Kiara is well equipped and very professional, has expertise in respective domains and committed towards the work assigned.",
     ],
-    tools:["Wordpress","PHP","Javascript","Express","NodeJs","MongoDB","GIT","Github"],
+    tools:["Wordpress","GIT","Github"],
     link:"https://kiarainteriors.in/index.php"
   },
   {
@@ -78,7 +78,8 @@ const data = [
       "I used Chakra UI for its design, which provides ease in creating responsive layouts and other functionalities. For the backend, I utilized Express, Node.js, and MongoDB in this project.",
       "This project incorporates functionalities like Register, Login for both owners and users. For login, options include mobile OTP, social authentication, and email verification. It features search functionality and a wishbook where users can bid for home design. Owners, professionals, and freelancers can comment and engage for potential work opportunities. Firebase is used for photo storage.",
     ],
-    tools:["HTML5","CSS3","Javascript","Chakra-UI","NodeJS","Express","MongoDB","React-Icons","React-Slider","GIT","Github"]
+    tools:["HTML5","CSS3","Javascript","Chakra-UI","NodeJS","Express","MongoDB","React-Icons","React-Slider","GIT","Github"],
+    link:"https://homminterior.com/"
   },
 ];
 

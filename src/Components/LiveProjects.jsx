@@ -54,7 +54,7 @@ function LiveProjects({Project}) {
               gap={{base:"15px",sm:"16px",md:"17px",lg:"17px"}}
               justifyContent={"center"}
             >
-              <Box>
+              <Box display={"flex"} flexDirection={"column"} gap={"15px"}>
                 <Text textTransform={"uppercase"} fontWeight={700} fontSize={{base:"22px",lg:"28px"}} textAlign={{base:"center",lg:"left"}}>
                   {project?.title}
                 </Text>
